@@ -8,89 +8,126 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Neurodivergent-friendly color palette - calming, accessible */
+    --background: 210 25% 98%;
+    --foreground: 215 25% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 210 20% 99%;
+    --card-foreground: 215 25% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 210 20% 99%;
+    --popover-foreground: 215 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Calming blue-green primary */
+    --primary: 185 85% 45%;
+    --primary-foreground: 210 25% 98%;
+    --primary-glow: 185 75% 60%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Soft, warm secondary */
+    --secondary: 210 15% 92%;
+    --secondary-foreground: 215 25% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 15% 95%;
+    --muted-foreground: 215 15% 50%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Gentle accent color */
+    --accent: 200 20% 88%;
+    --accent-foreground: 215 25% 25%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Success and warning colors - muted for comfort */
+    --success: 142 50% 55%;
+    --success-foreground: 210 25% 98%;
+    
+    --warning: 38 65% 65%;
+    --warning-foreground: 215 25% 15%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 0 65% 65%;
+    --destructive-foreground: 210 25% 98%;
 
-    --radius: 0.5rem;
+    --border: 210 20% 85%;
+    --input: 210 20% 88%;
+    --ring: 185 85% 45%;
 
-    --sidebar-background: 0 0% 98%;
+    --radius: 0.75rem;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* Gradient backgrounds for depth */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--secondary)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--accent)));
 
-    --sidebar-primary: 240 5.9% 10%;
+    /* Shadows for comfort */
+    --shadow-soft: 0 2px 8px hsl(var(--primary) / 0.08);
+    --shadow-medium: 0 4px 16px hsl(var(--primary) / 0.12);
+    --shadow-glow: 0 0 20px hsl(var(--primary-glow) / 0.2);
 
-    --sidebar-primary-foreground: 0 0% 98%;
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar colors */
+    --sidebar-background: 210 20% 97%;
+    --sidebar-foreground: 215 25% 25%;
+    --sidebar-primary: 185 85% 45%;
+    --sidebar-primary-foreground: 210 25% 98%;
+    --sidebar-accent: 210 15% 90%;
+    --sidebar-accent-foreground: 215 25% 25%;
+    --sidebar-border: 210 20% 85%;
+    --sidebar-ring: 185 85% 45%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark mode - extra calming for sensitive users */
+    --background: 215 25% 8%;
+    --foreground: 210 20% 90%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 215 20% 10%;
+    --card-foreground: 210 20% 90%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 215 20% 10%;
+    --popover-foreground: 210 20% 90%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 185 70% 55%;
+    --primary-foreground: 215 25% 8%;
+    --primary-glow: 185 60% 70%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 215 20% 15%;
+    --secondary-foreground: 210 20% 85%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 215 20% 12%;
+    --muted-foreground: 215 15% 60%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 215 15% 18%;
+    --accent-foreground: 210 20% 85%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --success: 142 40% 50%;
+    --success-foreground: 210 20% 90%;
+    
+    --warning: 38 55% 60%;
+    --warning-foreground: 215 25% 8%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --destructive: 0 55% 60%;
+    --destructive-foreground: 210 20% 90%;
+
+    --border: 215 20% 18%;
+    --input: 215 20% 15%;
+    --ring: 185 70% 55%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--secondary)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--accent)));
+
+    --shadow-soft: 0 2px 8px hsl(0 0% 0% / 0.2);
+    --shadow-medium: 0 4px 16px hsl(0 0% 0% / 0.3);
+    --shadow-glow: 0 0 20px hsl(var(--primary-glow) / 0.3);
+
+    --sidebar-background: 215 20% 9%;
+    --sidebar-foreground: 210 20% 85%;
+    --sidebar-primary: 185 70% 55%;
+    --sidebar-primary-foreground: 215 25% 8%;
+    --sidebar-accent: 215 15% 15%;
+    --sidebar-accent-foreground: 210 20% 85%;
+    --sidebar-border: 215 20% 18%;
+    --sidebar-ring: 185 70% 55%;
   }
 }
 
@@ -100,6 +137,53 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+    scroll-behavior: smooth;
+  }
+
+  /* Reduce motion for sensitive users */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Neurodivergent-friendly button variants */
+  .btn-calm {
+    @apply bg-gradient-to-r from-primary/80 to-primary-glow/80 
+           text-primary-foreground rounded-xl px-6 py-3 
+           transition-all duration-300 ease-out
+           hover:shadow-lg hover:scale-105 focus:ring-2 focus:ring-primary/30;
+  }
+
+  .btn-gentle {
+    @apply bg-secondary/50 text-secondary-foreground rounded-lg px-4 py-2
+           transition-all duration-200 ease-out
+           hover:bg-secondary/70 focus:ring-2 focus:ring-primary/20;
+  }
+
+  /* Card styles for content sections */
+  .card-glow {
+    @apply bg-gradient-to-br from-card to-accent/30 
+           border border-border/50 rounded-2xl p-6
+           shadow-soft hover:shadow-medium transition-all duration-300;
+  }
+
+  .card-floating {
+    @apply bg-card/80 backdrop-blur-sm border border-border/30 
+           rounded-2xl p-6 shadow-medium;
+  }
+
+  /* Text styles for readability */
+  .text-gentle {
+    @apply text-muted-foreground leading-relaxed;
+  }
+
+  .text-emphasis {
+    @apply text-foreground font-medium;
   }
 }
