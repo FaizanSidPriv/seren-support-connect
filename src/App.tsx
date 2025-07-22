@@ -6,6 +6,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Auth from "./pages/Auth";
 import Dashboard from "./pages/Dashboard";
+import RoutinePlanner from "./pages/RoutinePlanner";
+import EmotionLogger from "./pages/EmotionLogger";
+import CommunicationTools from "./pages/CommunicationTools";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,6 +23,9 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/routine-planner" element={<RoutinePlanner />} />
+          <Route path="/emotion-logger" element={<EmotionLogger />} />
+          <Route path="/communication-tools" element={<CommunicationTools />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
