@@ -8,77 +8,81 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Modern Brand Colors - Tech-forward blues and purples */
-    --primary: 217 91% 60%;
-    --primary-foreground: 0 0% 98%;
-    --primary-glow: 217 91% 70%;
-    --primary-variant: 250 84% 64%;
+    /* Neurodivergent-Friendly Soft Pastels */
+    --primary: 220 60% 75%;        /* Soft periwinkle blue */
+    --primary-foreground: 220 30% 15%;
+    --primary-glow: 220 60% 85%;
+    --primary-variant: 240 50% 80%; /* Soft lavender */
     
-    /* Secondary - Clean modern grays */
-    --secondary: 217 32% 17%;
-    --secondary-foreground: 0 0% 98%;
+    /* Calming Secondary Colors */
+    --secondary: 150 25% 85%;       /* Soft sage green */
+    --secondary-foreground: 150 30% 25%;
     
-    /* Accent - Vibrant highlights */
-    --accent: 197 71% 73%;
-    --accent-foreground: 217 32% 17%;
+    /* Gentle Accent Colors */
+    --accent: 30 70% 85%;          /* Warm peach */
+    --accent-foreground: 30 40% 30%;
     
-    /* Modern Neutral Base */
-    --background: 0 0% 100%;
-    --foreground: 217 32% 17%;
+    /* Calm Neutral Base */
+    --background: 0 0% 98%;        /* Near white with warmth */
+    --foreground: 220 20% 25%;     /* Soft dark blue-gray */
     
-    /* Glass-morphism Cards */
-    --card: 0 0% 100%;
-    --card-foreground: 217 32% 17%;
+    /* Gentle Card Backgrounds */
+    --card: 220 40% 96%;           /* Very light blue-tinted */
+    --card-foreground: 220 20% 25%;
     
     /* Popover */
-    --popover: 0 0% 100%;
-    --popover-foreground: 217 32% 17%;
+    --popover: 220 40% 96%;
+    --popover-foreground: 220 20% 25%;
     
-    /* Muted Elements */
-    --muted: 217 32% 96%;
-    --muted-foreground: 217 25% 55%;
+    /* Muted Elements - Higher Contrast for Accessibility */
+    --muted: 220 30% 90%;
+    --muted-foreground: 220 15% 45%;
     
-    /* Borders and Inputs */
-    --border: 217 32% 91%;
-    --input: 217 32% 91%;
-    --ring: 217 91% 60%;
+    /* Borders and Inputs - Soft but Visible */
+    --border: 220 25% 85%;
+    --input: 220 30% 92%;
+    --ring: 220 60% 75%;
     
-    /* Status Colors */
-    --destructive: 0 84% 60%;
+    /* Status Colors - Soft but Clear */
+    --destructive: 0 60% 70%;      /* Soft red */
     --destructive-foreground: 0 0% 98%;
-    
-    --radius: 0.5rem;
-    
-    /* Modern Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(250 84% 64%));
-    --gradient-secondary: linear-gradient(135deg, hsl(217 32% 96%), hsl(217 32% 91%));
-    --gradient-accent: linear-gradient(135deg, hsl(197 71% 73%), hsl(217 91% 70%));
-    --gradient-glass: linear-gradient(135deg, hsla(0 0% 100% / 0.25), hsla(0 0% 100% / 0.1));
-    --gradient-hero: linear-gradient(135deg, hsl(217 91% 60%), hsl(250 84% 64%), hsl(197 71% 73%));
-    
-    /* Modern Shadows */
-    --shadow-sm: 0 1px 2px 0 hsla(217 91% 60% / 0.05);
-    --shadow: 0 4px 6px -1px hsla(217 91% 60% / 0.1), 0 2px 4px -1px hsla(217 91% 60% / 0.06);
-    --shadow-md: 0 10px 15px -3px hsla(217 91% 60% / 0.1), 0 4px 6px -2px hsla(217 91% 60% / 0.05);
-    --shadow-lg: 0 20px 25px -5px hsla(217 91% 60% / 0.1), 0 10px 10px -5px hsla(217 91% 60% / 0.04);
-    --shadow-elegant: 0 25px 50px -12px hsla(217 91% 60% / 0.25);
-    --shadow-glow: 0 0 60px hsla(217 91% 70% / 0.5);
-    --shadow-glass: 0 8px 32px 0 hsla(217 91% 60% / 0.12);
-    
-    /* Transitions */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    --transition-glass: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --success: 120 40% 70%;        /* Soft green */
+    --success-foreground: 120 30% 20%;
+    --warning: 45 80% 75%;         /* Soft amber */
+    --warning-foreground: 45 40% 25%;
 
-    /* Sidebar colors */
-    --sidebar-background: 217 32% 96%;
-    --sidebar-foreground: 217 32% 17%;
-    --sidebar-primary: 217 91% 60%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 217 32% 91%;
-    --sidebar-accent-foreground: 217 32% 17%;
-    --sidebar-border: 217 32% 91%;
-    --sidebar-ring: 217 91% 60%;
+    --radius: 0.75rem;             /* Slightly more rounded for softness */
+
+    /* Sidebar colors - Neurodivergent friendly */
+    --sidebar-background: 220 50% 94%;
+    --sidebar-foreground: 220 20% 25%;
+    --sidebar-primary: 220 60% 75%;
+    --sidebar-primary-foreground: 220 30% 15%;
+    --sidebar-accent: 220 30% 88%;
+    --sidebar-accent-foreground: 220 20% 25%;
+    --sidebar-border: 220 25% 82%;
+    --sidebar-ring: 220 60% 75%;
+    
+    /* Calming Gradients - Neurodivergent Friendly */
+    --gradient-primary: linear-gradient(135deg, hsl(220 60% 75%), hsl(240 50% 80%));
+    --gradient-secondary: linear-gradient(135deg, hsl(150 25% 85%), hsl(120 40% 70%));
+    --gradient-accent: linear-gradient(135deg, hsl(30 70% 85%), hsl(45 80% 75%));
+    --gradient-glass: linear-gradient(135deg, hsla(220 40% 96% / 0.8), hsla(220 40% 96% / 0.6));
+    --gradient-hero: linear-gradient(135deg, hsl(220 60% 75%), hsl(240 50% 80%), hsl(30 70% 85%));
+    
+    /* Soft Shadows for Calm UI */
+    --shadow-sm: 0 1px 3px 0 hsla(220 60% 75% / 0.1);
+    --shadow: 0 2px 8px -2px hsla(220 60% 75% / 0.15), 0 1px 4px -1px hsla(220 60% 75% / 0.1);
+    --shadow-md: 0 4px 12px -4px hsla(220 60% 75% / 0.15), 0 2px 6px -2px hsla(220 60% 75% / 0.1);
+    --shadow-lg: 0 8px 24px -8px hsla(220 60% 75% / 0.2), 0 4px 12px -4px hsla(220 60% 75% / 0.1);
+    --shadow-elegant: 0 12px 32px -8px hsla(220 60% 75% / 0.25);
+    --shadow-glow: 0 0 24px hsla(220 60% 85% / 0.6);
+    --shadow-glass: 0 4px 16px 0 hsla(220 60% 75% / 0.15);
+    
+    /* Gentle Transitions for Accessibility */
+    --transition-smooth: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.15, 0.265, 1.15);
+    --transition-glass: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
 
   .dark {
